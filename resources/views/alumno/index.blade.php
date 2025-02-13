@@ -34,10 +34,15 @@
                 <td>{{$item->fecha_nacimiento}}</td>
                 <td>{{$item->telefono}}</td>
                 <td>{{$item->email}}</td>
+                <td>
+                    <form action="{{url('/alumnos/'.$item->id)}}" method="get">
+                        <input type="submit" class="btn btn-primary" value="ver">
+                    </form> 
+                </td> 
 
                 <td>
                     <form action="{{url('/alumnos/'.$item->id.'/edit')}}" method="get">
-                        <input type="submit" class="btn btn-primary" value="editar">
+                        <input type="submit" class="btn btn-secondary" value="editar">
                     </form> 
                 </td>       
                 <td>

@@ -32,7 +32,7 @@
     <input type="email" name="email" id="email" value="{{$alumno->email}}"class="form-control">
     </section>
 
-    <button type="submit" class="btn btn-primary">Guardar</button>
+    <button type="submit" class="btn btn-success">Guardar</button>
 
 </form>
 @endsection

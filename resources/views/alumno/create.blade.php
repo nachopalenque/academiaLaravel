@@ -24,7 +24,7 @@
     <label for="email" class="form-label" id="email">Email: </label>
     <input type="email" id="email" name="email" />
     </section>
-    <button type="submit" class="btn btn-primary">Guardar</button>
+    <button type="submit" class="btn btn-success">Guardar</button>
 
 </form>
 @endsection

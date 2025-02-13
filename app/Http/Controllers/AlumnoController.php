@@ -38,7 +38,7 @@ class AlumnoController extends Controller
 
       
         $alumno->save();
-        return("registro guardado");
+        return redirect('alumnos');
 
 
     }
@@ -46,10 +46,10 @@ class AlumnoController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Alumno $alumno)
+    public function show($id)
     {
-        //
-    }
+        $alumno = Alumno::find($id);
+        return view('alumno.show',['id'=>$id, 'alumno'=>$alumno]);    }
 
     /**
      * Show the form for editing the specified resource.
